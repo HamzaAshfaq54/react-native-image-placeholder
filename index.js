@@ -67,7 +67,7 @@ class ImageLoad extends React.Component {
           </View>
         }
         {
-          this.props.children &&
+          this.props.children&&this.state.isLoaded &&
           <View style={styles.viewChildrenStyles}>
           {
             this.props.children
